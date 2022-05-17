@@ -1,5 +1,15 @@
 @charset    "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root { /*Variáveis*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One' , cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{ /*configurações gerais*/
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh; /*ocupar 100% da região de vizualização*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px; /*espaço em cima*/
     font-variant: small-caps; /*colocar as letras maiúsculas com a primeira letra maior*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*tamanho da fonte de 10% da largura*/
 }
 header > p {
     padding-bottom: 50px; /* espaço em baixo*/
@@ -39,6 +52,8 @@ section { /*configurando as duas class*/
     padding-bottom: 10vh; /*10% da altura em baixo*/
     line-height: 2em; /*espaçamento entree as linhas*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal { /*configurando a class normal*/
@@ -52,8 +67,10 @@ section.imagem {/*configurando a class imagem*/
 }
 
 section.imagem > p {
-    width: 400px; /*largura da caixa de parágrafo*/
+   /*width: 400px = largura da caixa de parágrafo*/
     background-color: rgba(0, 0, 0, 0.600);
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
